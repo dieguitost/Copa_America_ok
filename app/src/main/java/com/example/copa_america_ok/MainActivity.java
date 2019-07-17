@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        final Button btn1= (Button) findViewById(R.id.button);
+        registrar= (Button) findViewById(R.id.button);
 
         firebaseAuth = FirebaseAuth.getInstance();
         usuario = (EditText) findViewById(R.id.usuario);
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
 
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registro();
@@ -93,7 +94,14 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this,"Se a registrado el email",Toast.LENGTH_SHORT).show();
                         }
                         else {
-                            Toast.makeText(MainActivity.this,"no se a podido registrar  el usuario",Toast.LENGTH_SHORT).show();
+                            if (task.getException() instanceof FirebaseAuthUserCollisionException)
+                            {
+                                Toast.makeText(MainActivity.this,"Email ya existente",Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                Toast.makeText(MainActivity.this,"no se a podido registrar  el usuario",Toast.LENGTH_SHORT).show();
+                            }
+
                         }
                         progressDialog.dismiss();
                     }
