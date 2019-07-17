@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Copa America</string>
+    <string name="title_activity_principal">Sedes Copa América 2019</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">¡Bienvenido!</string>
+    <string name="nav_header_subtitle">Usuario Principal</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Funcionalidades</string>
+
+    <string name="menu_home">Mis Ubicaciones</string>
+    <string name="menu_gallery">Vista Satelital</string>
+    <string name="menu_slideshow">LLamadas</string>
+    <string name="menu_tools">LLamadas</string>
+    <string name="menu_share">Contactos</string>
+    <string name="menu_send">Cerrar Sesión</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Morumbiinfo">Características</string>
+</resources>
