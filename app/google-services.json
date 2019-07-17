@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "490540269650",
+    "firebase_url": "https://copa-a5f3b.firebaseio.com",
+    "project_id": "copa-a5f3b",
+    "storage_bucket": "copa-a5f3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490540269650:android:1f2624cfcb0739c3",
+        "android_client_info": {
+          "package_name": "com.example.copa_america_ok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490540269650-k6i2ps2o0ta0gh9ct513tk14285r85sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL-83NjRFgTI25l1UGZ_J8koKmmrXTVdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490540269650-k6i2ps2o0ta0gh9ct513tk14285r85sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
